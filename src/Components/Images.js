@@ -27,6 +27,7 @@ function Images(props){
                     return (
                         <div className='image'>
                             <img src={image.url} alt={image.title}/>
+                            <p>{image.id}</p>
                         </div>
                     )
                 })}

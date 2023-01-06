@@ -19,6 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   gap: 1rem;
   margin: 100px auto;
   width: 60%;
@@ -31,13 +32,14 @@
 }
 
 .pagination {
-  list-style: none;
   display: flex;
+  list-style: none;
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
   font-size: 1.2rem;
   gap: 5px;
+  
 }
 
 .pagination .page-num {
@@ -54,6 +56,10 @@
 .pagination .active {
   background-color: #5ab1bb;
   color: #fff;
+}
+
+.images p {
+  color:#5ab1bb;
 }
 
 
