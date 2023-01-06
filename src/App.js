@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Images from './Components/Images';
 import './style.css';
 
 //https://jsonplaceholder.typicode.com/
@@ -10,13 +11,14 @@ function App() {
     .then(response => response.json() //convert response into JSON
     .then(data => {
       setImages(data);
-    }))
+    })
+      )
   }, [])
 
 
   return (
     <div className="App">
-      
+      <Images data={images}/>
     </div>
   );
 }

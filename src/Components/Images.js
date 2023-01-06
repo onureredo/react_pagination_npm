@@ -10,9 +10,9 @@ function Images(props){
     const itemsPerPage = 6;
 
     useEffect(() => {
-        const endOffset = itemOffset + itemsPerPAge;
+        const endOffset = itemOffset + itemsPerPage;
         setCurrentItems(data.slice(itemOffset, endOffset));
-        setPageCount(Math.ceil(data.length / itemsPerPAge));
+        setPageCount(Math.ceil(data.length / itemsPerPage));
     }, [itemOffset, itemsPerPage, data]);
 
     const handlePageClick = (event) => {
