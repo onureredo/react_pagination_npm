@@ -21,26 +21,31 @@ function Images(props){
     };
 
     return (
-        <>
-        <div className='images'>
-            {currentItems.map(image => {
-                return (
-                    <div className='image'>
-                        <img src={image.url} alt={image.title}/>
-                    </div>
-                )
-            })}
+        <div>
+            <div className='images'>
+                {currentItems.map(image => {
+                    return (
+                        <div className='image'>
+                            <img src={image.url} alt={image.title}/>
+                        </div>
+                    )
+                })}
+            </div>
+            <ReactPaginate
+                breakLabel= "..."
+                nextLabel= "next >"
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={5}
+                pageCount={pageCount}
+                previousLabel= "<previous"
+                renderOnZeroPageCount={null}
+                containerClassName="pagination"
+                activeLinkClassName='active'
+                pageLinkClassName='page-num'
+                previousLinkClassName='page-num'
+                nextLinkClassName='page-num'
+            />
         </div>
-        <ReactPaginate
-            breakLabel= "..."
-            nextLabel= "next >"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={5}
-            pageCount={pageCount}
-            previousLabel= "<previous"
-            renderOnZeroPageCount={null}
-        />
-        </>
     )
 }
 
