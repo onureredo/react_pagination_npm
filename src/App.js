@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/photos')
-    .then(response => response.json() //convert response into JSON
+    .then(response => response.json()
     .then(data => {
       setImages(data)
       // console.log(data);
