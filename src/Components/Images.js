@@ -35,9 +35,9 @@ function Images(props){
                 breakLabel= "..."
                 nextLabel= "next >"
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={5}
+                pageRangeDisplayed={9}
                 pageCount={pageCount}
-                previousLabel= "<previous"
+                previousLabel= "<prev..."
                 renderOnZeroPageCount={null}
                 containerClassName="pagination"
                 activeLinkClassName='active'
