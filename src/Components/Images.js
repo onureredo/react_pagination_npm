@@ -36,7 +36,7 @@ function Images(props){
                 breakLabel= "..."
                 nextLabel= "next >"
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={9}
+                pageRangeDisplayed={5}
                 pageCount={pageCount}
                 previousLabel= "<prev..."
                 renderOnZeroPageCount={null}

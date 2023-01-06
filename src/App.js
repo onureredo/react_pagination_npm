@@ -10,7 +10,8 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/photos')
     .then(response => response.json() //convert response into JSON
     .then(data => {
-      setImages(data);
+      setImages(data)
+      // console.log(data);
     })
       )
   }, [])
